@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 3</title>
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+        integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                font-size: 1.125;
+                font-family: 'Times New Roman', Times, serif;
+                line-height: 1.5rem;
+            }
+        .container{
+        min-height: 100vh;
+        position: relative;
+        overflow-x: hidden;
+        }
+        .bg{
+            position: absolute;
+            height: 100%;
+            width: 130%;
+            background-image: linear-gradient(90deg, rgb(57,222,251), rgb(51,51,249));
+            z-index: -1;
+            transform: rotate(188deg) translate(100px,100px);
+        }
+        .logo{
+            display: flex;
+            justify-content: center;
+            margin-top: 10rem;
+        }
+        </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="bg"></div>
+        <div class="content">
+            <div class="logo">
+                <i class="fa fa-cog"></i>
+                zimcore<br>hubs
+            </div>
+            <div class="tagline">
+                Changing the World <br>
+                <b>one at a time</b>
+                <button>
+                    Learn More
+                </button>
+            </div>
+        </div>
+        <div class="img-area">
+            <img src="/static/images/img1.png" alt="ek image">
+        </div>
+    </section>
+    <section class="container"></section>
+    <section class="container"></section>
+    <section class="container"></section>
+    <section class="container"></section>
+</body>
+
+</html>
