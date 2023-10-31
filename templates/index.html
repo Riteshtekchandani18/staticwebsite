@@ -14,59 +14,203 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
         integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <style>
-            *{
-                padding: 0;
-                margin: 0;
-                font-size: 1.125;
-                font-family: 'Times New Roman', Times, serif;
-                line-height: 1.5rem;
-            }
-        .container{
-        min-height: 100vh;
-        position: relative;
-        overflow-x: hidden;
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-size: 1.125rem;
+            line-height: 1.5;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            box-sizing: border-box;
         }
-        .bg{
-            position: absolute;
-            height: 100%;
-            width: 130%;
-            background-image: linear-gradient(90deg, rgb(57,222,251), rgb(51,51,249));
-            z-index: -1;
-            transform: rotate(188deg) translate(100px,100px);
+
+        .container {
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
         }
-        .logo{
+
+
+        .inner-container {
+
+            min-height: 100vh;
             display: flex;
-            justify-content: center;
-            margin-top: 10rem;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 100%;
+            margin-inline: auto;
+            padding: 2rem;
         }
-        </style>
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* outline: 2px dotted green; */
+        }
+
+        .bg {
+            position: absolute;
+            height: 105%;
+            width: 120%;
+            background-image: linear-gradient(90deg, rgb(51, 51, 249), rgb(57, 222, 251));
+            z-index: -1;
+            transform: rotate(188deg) translate(100px, 100px);
+        }
+
+        .tagline {
+            padding: .5rem;
+            /* outline:1px dotted yellow; */
+        }
+
+        .tagline p,
+        .tagline span {
+            line-height: 1;
+            font-size: 4rem;
+            color: white;
+            text-align: center;
+            word-spacing: 0rem;
+            letter-spacing: -.4rem;
+
+        }
+
+        .tagline span {
+            font-weight: bolder;
+        }
+
+        button {
+            border: none;
+            border-radius: 50px;
+            background-color: white;
+            color: rgb(22, 109, 223);
+            font-weight: bold;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            padding: .5rem .3rem;
+            width: 300px;
+            margin: 2rem;
+
+        }
+
+        .img-area {
+            /* outline: 1px dotted red; */
+        }
+
+        .img-area img {
+            height: 130%;
+            object-fit: cover;
+
+
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: .5rem;
+            font-size: 1rem;
+            line-height: 1.2;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            padding: 1rem 2rem;
+            /* outline: 1px dotted red; */
+        }
+
+        .s {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        /* .img2{
+            height: 10rem;
+            width: 10rem;
+            /* object-fit: cover; */
+        .set {
+            height: 80px;
+            width: 300px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            object-fit: cover;
+            gap: 1rem;
+        }
+
+        .set img {
+            width: 200px;
+            height: 200px;
+        }
+        .img1-area, .img2-area{
+            display: flex;
+            height: 300px;
+            flex-direction: column;
+        }
+        .img1-area{
+            justify-content: start;
+        }
+        .img2-area{
+            justify-content: end;
+        }
+    </style>
 </head>
 
 <body>
     <section class="container">
         <div class="bg"></div>
-        <div class="content">
-            <div class="logo">
-                <i class="fa fa-cog"></i>
-                zimcore<br>hubs
-            </div>
-            <div class="tagline">
-                Changing the World <br>
-                <b>one at a time</b>
+        <div class="inner-container">
+            <div class="content">
+                <div class="logo">
+                    <i class="fa fa-cog fa-3x"></i>
+                    zimcore<br>hubs
+                </div>
+                <div class="tagline">
+                    <p>
+                        Changing the world <br>
+                        <span>one app at a time</span>
+                    </p>
+                </div>
                 <button>
                     Learn More
                 </button>
             </div>
-        </div>
-        <div class="img-area">
-            <img src="/static/images/img1.png" alt="ek image">
+            <div class="img-area">
+                <img src="/static/images/img1.png" alt="ek image">
+            </div>
         </div>
     </section>
-    <section class="container"></section>
-    <section class="container"></section>
-    <section class="container"></section>
-    <section class="container"></section>
+    <section class="container">
+        <div class="sec">
+            <div class="s">
+                <div class="text-content">
+                    <h2>Our Company Story</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, repudiandae quo neque quaerat in
+                        vero,
+                        vitae, illum ducimus minus earum aliquam. Voluptatum nemo ea voluptate rem iusto deleniti cumque
+                        non
+                        libero adipisci inventore incidunt veniam enim dicta impedit nostrum, neque deserunt eveniet
+                        maiores
+                        at. Animi ex qui quas vel alias?</p>
+                </div>
+                <div class="set">
+                    <div class="img1-area">
+                        <img src="/static/images/img2.jpg" alt="do image">
+                    </div>
+                    <div class="img2-area">
+                        <img src="/static/images/img3.jpg" alt="tisri">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+
+    </section>
+    <section class="container">
+
+    </section>
+    <section class="container">
+
+    </section>
 </body>
 
 </html>
