@@ -52,7 +52,7 @@
 
         .bg {
             position: absolute;
-            height: 105%;
+            height: 100%;
             width: 120%;
             background-image: linear-gradient(90deg, rgb(51, 51, 249), rgb(57, 222, 251));
             z-index: -1;
@@ -138,18 +138,58 @@
 
         .set img {
             width: 200px;
-            height: 200px;
+            height: 400px;
+
         }
-        .img1-area, .img2-area{
+
+        .img1-area,
+        .img2-area {
             display: flex;
             height: 300px;
             flex-direction: column;
+            border: none;
+            border-radius: 20px;
+
         }
-        .img1-area{
+
+        .img1-area {
             justify-content: start;
+            border-radius: 20px;
         }
-        .img2-area{
+
+        .img2-area {
             justify-content: end;
+        }
+
+        /* .text-content{
+            justify-content: center;
+             */
+
+        .s {
+            justify-content: center;
+
+        }
+
+        .text-content {
+            background-color: rgba(128, 128, 128, 0.828);
+            justify-content: center;
+            text-align: center;
+
+        }
+
+        .text-content h {
+            color: blue;
+            font-size: bolder;
+        }
+
+        .para {
+            border: cover;
+            text-align: center;
+            justify-content: center;
+            background-image: linear-gradient(90deg, rgb(51, 51, 249), rgb(57, 222, 251));
+            color: white;
+            background-size: cover;
+            font-size: 2.5rem;
         }
     </style>
 </head>
@@ -178,6 +218,16 @@
             </div>
         </div>
     </section>
+    <style>
+        .sec{
+            display: grid;
+            width: 100%;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            background-color: red;
+            justify-content: center;
+        }
+    </style>
     <section class="container">
         <div class="sec">
             <div class="s">
@@ -203,13 +253,26 @@
         </div>
     </section>
     <section class="container">
+        <h2>Our Services</h2>
 
     </section>
     <section class="container">
-
+        <div class="3rd" style="background-size: cover;">
+            <p class="para"><b style="font-size: 2.5rem;">Tecnology</b> ipsum dolor sit amet consectetur adipisicing
+                elit. Non, expedita necessitatibus! Vitae est quam ex eum? Fugiat repudiandae repellat dicta quam ipsum
+                perferendis modi aperiam dolores, laudantium et tenetur, optio expedita reprehenderit nisi id
+                voluptatibus earum sint consequuntur excepturi maiores quo aut magni laboriosam. Harum nihil natus eum
+                asperiores alias <b style="font-size: 2.5rem;">making lives better</b>.</p>
+        </div>
     </section>
-    <section class="container">
-
+    <!-- <section class="container">
+          <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.492/build/spline-viewer.js"></script>
+<spline-viewer url="https://prod.spline.design/GWbomk92OZqxHj6H/scene.splinecode"></spline-viewer> -->
+    </section>
+    <section class="cub">
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.492/build/spline-viewer.js"></script>
+<spline-viewer url="https://prod.spline.design/JaJZiR50nllmgbd8/scene.splinecode"></spline-viewer>
+<h4>cubic 3d</h4>
     </section>
 </body>
 
